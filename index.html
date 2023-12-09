@@ -1,0 +1,87 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Define the colors for the theme */
+   
+  </style>
+  <meta name="theme-color" content="#6a5acd">
+  <meta name="monetag" content="2dcf3f68ca33603982b6d48336b32594">
+  <link rel="stylesheet" href="style.css">
+  <title>Ads Show</title>
+  
+</head>
+<body>
+  <header>
+    <div class="logo">Ads Show</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Use JavaScript to generate the ad elements dynamically -->
+    <script>
+      // Define an array of ad objects
+      var ads = [
+        {
+          title: "Monotising Agents",
+          image: "https://source.unsplash.com/300x250/?code",
+          text: "We provides our services to you by foz dtx , smodil servers , gtg govo",
+          button: "Enroll Now"
+        },
+        {
+          title: "Buy for free",
+          image: "https://source.unsplash.com/300x250/?pizza",
+          text: "Don't miss this amazing deal on foz dtx get it for free , we will pay for you",
+          button: "Order Now"
+        },
+        {
+          title: "Travel the Privacy",
+          image: "https://source.unsplash.com/300x250/?travel",
+          text: "Privacy is a myh for this worls but for us this line is not related , We cares about your privacy",
+          button: "Read More"
+        }
+      ];
+
+      // Loop through the array and create the ad elements
+      for (var i = 0; i < ads.length; i++) {
+        // Create a div element for the ad
+        var ad = document.createElement("div");
+        ad.className = "ad";
+
+        // Create a div element for the ad title
+        var adTitle = document.createElement("div");
+        adTitle.className = "ad-title";
+        adTitle.textContent = ads[i].title;
+
+        // Create an img element for the ad image
+        var adImage = document.createElement("img");
+        adImage.className = "ad-image";
+        adImage.src = ads[i].image;
+        adImage.alt = ads[i].title;
+
+        // Create a div element for the ad text
+        var adText = document.createElement("div");
+        adText.className = "ad-text";
+        adText.textContent = ads[i].text;
+
+        // Create a button element for the ad button
+        var adButton = document.createElement("button");
+        adButton.className = "ad-button";
+        adButton.textContent = ads[i].button;
+
+        // Append the ad elements to the ad div
+        ad.appendChild(adTitle);
+        ad.appendChild(adImage);
+        ad.appendChild(adText);
+        ad.appendChild(adButton);
+
+        // Append the ad div to the main element
+        document.querySelector("main").appendChild(ad);
+      }
+    </script>
+  </main>
+</body>
+</html>

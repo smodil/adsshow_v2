@@ -1,0 +1,16 @@
+{
+  "name" : "accounts",
+  "ext" : "json",
+  "type" : "account_info_file",
+  "data" : {
+    "users" : {
+      "A02N293JIFJ93290R9FJ92J9WJ0DF9F9JW0RJ2890R" : {
+        "name" : "foz dtx",
+        "web" : "https://fozdtxonline.wordpress.com/",
+        "date" : "9/11/2023",
+        "time" : "12:39pm",
+        "load" : "A0110101110111101110110110101.html"
+      }
+    }
+  }
+}

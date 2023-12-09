@@ -1,0 +1,120 @@
+ :root {
+      --primary-color: #6a5acd; /* Slate blue */
+      --secondary-color: #9370db; /* Medium purple */
+      --tertiary-color: #eee8aa; /* Pale goldenrod */
+    }
+
+    /* Style the body element */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--tertiary-color);
+    }
+
+    /* Style the header element */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    /* Style the logo element */
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Style the navigation bar element */
+    nav {
+      display: flex;
+    }
+
+    /* Style the navigation links */
+    nav a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Change the color of the navigation links on hover */
+    nav a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Style the main content element */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    /* Style the ad elements */
+    .ad {
+      width: 300px;
+      height: 250px;
+      margin: 10px;
+      border: 1px solid black;
+      background-color: white;
+    }
+
+    /* Style the ad title element */
+    .ad-title {
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    /* Style the ad image element */
+    .ad-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /* Style the ad text element */
+    .ad-text {
+      padding: 10px;
+      font-size: 14px;
+      color: black;
+    }
+
+    /* Style the ad button element */
+    .ad-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: var(--secondary-color);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Change the color of the ad button on hover */
+    .ad-button:hover {
+      background-color: var(--primary-color);
+    }
+
+    /* Use media queries to make the layout responsive */
+    @media (max-width: 600px) {
+      /* Make the header elements stack vertically */
+      header {
+        flex-direction: column;
+      }
+
+      /* Make the navigation bar take the full width */
+      nav {
+        width: 100%;
+      }
+
+      /* Make the ad elements take the full width */
+      .ad {
+        width: 100%;
+      }
+    }
